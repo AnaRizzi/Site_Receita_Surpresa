@@ -7,7 +7,6 @@ let receita;
 const fetchAPI = async (urlApi) => {
 	let response = await fetch(urlApi);
 	const textResponse = await response.text();
-	console.log(textResponse)
 	return JSON.parse(textResponse);			//devolve a api no formato JSON
 }
 
