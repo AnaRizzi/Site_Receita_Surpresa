@@ -1,0 +1,201 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', 'Roboto', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* fontes disponíveis:
+font-family: 'Dancing Script', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Sriracha', cursive;
+*/
+
+:root { 
+  --black: rgb(0,0,0);
+  --rosa_escuro: rgb(238,104,108);
+  --rosa_claro: rgb(255,214,214);
+  --marrom: rgb(151,104,97);
+  --marrom_claro: rgb(180,132,128);
+  --bege: rgb(242,178,120); 
+  --white: rgb(255,255,255);
+}
+/* para usar: background: var(--grayMedium) */
+
+/* todos os links pegaram a cor do pai automaticamente, não ficarão azul */
+a { 
+  color: inherit;
+} 
+
+/* Botão ou link com efeito de clique: */
+button:active{
+	transform: translateY(4px) translateX(1px);
+}
+
+.esconder{
+	display:none;
+}
+
+.corpo{
+	min-height: 92vh;
+	background-image: url('../img/fundo.png');
+	padding: 30px;
+}
+
+.card-footer{
+	min-height: 8vh;
+	padding: 5px;
+}
+
+.imgredes{
+	width: 30px;
+	border-radius: 50%;
+	margin: 0 5px 0 5px;
+}
+
+
+#conteudo .titulo{
+	max-width: 440px; 
+	background-color: rgba(255,255,255,0.7);
+	text-align: center;
+	margin: auto;
+	margin-top: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 15px;
+}
+
+#conteudo .botoes{
+	max-width: 400px; 
+	background-color: rgba(255,255,255,0.7);
+	text-align: center;
+	margin: auto;
+	margin-top: 80px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 15px;
+}
+
+#conteudo .titulo h1{
+	font-family: 'Dancing Script';
+	font-size:48pt;
+	color: var(--rosa_escuro);
+}
+
+#conteudo .titulo p{
+	font-family: 'Source Sans Pro';
+	font-size:12pt;
+	color: var(--marrom);
+	margin: 5px;
+}
+
+#conteudo .botoes p{
+	font-family: 'Source Sans Pro';
+	font-size: 16pt;
+	color: var(--black);
+	margin-top: 5px;
+
+}
+
+#conteudo .botoes button{
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+	font-family: 'Sriracha';
+	background-color: var(--rosa_claro);
+	color: var(--black);
+
+}
+
+
+
+/* RECEITA */
+#receita{
+	width: 70%;
+	margin: auto;
+	background-color: rgba(255,255,255,0.7);
+	padding: 20px;
+	border-radius: 15px;
+}
+
+#receita .div-img-receita{
+	text-align: center;
+}
+
+#receita .img-receita{
+	width: 300px;
+	margin: auto;
+	border-radius: 15px;
+	border: solid 1px var(--marrom);	
+}
+
+#receita .titulo{
+	text-align: center;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#receita h1{
+	font-family: 'Dancing Script';
+	font-size:48pt;
+	color: var(--rosa_escuro);
+}
+
+#receita .infos{
+	color: var(--marrom);
+	text-align: center;
+}
+
+#receita u{
+	text-decoration: none;
+	margin: 20px;
+}
+
+#receita li{
+	list-style-position: inside;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+#receita u h3{
+	color: var(--marrom);
+	margin-left: 20px;
+}
+
+#receita .preparo{
+	margin: 15px;
+}
+
+#receita .preparo h3{
+	color: var(--marrom);
+}
+
+#receita .div-voltar{
+	text-align: center;
+	justify-content: center;
+}
+
+
+#receita .voltar{
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+	font-family: 'Sriracha';
+	background-color: var(--rosa_claro);
+	color: var(--black);
+	width: 100px; 
+}
+
+
+@media (max-width:600px){
+	#receita{
+		width: 90%;
+	}
+
+}
+
