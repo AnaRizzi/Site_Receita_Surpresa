@@ -197,5 +197,9 @@ button:active{
 		width: 90%;
 	}
 
+	#receita .img-receita{
+	width: 240px;
+}
+
 }
 
